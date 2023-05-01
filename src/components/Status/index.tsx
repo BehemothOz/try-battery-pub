@@ -6,9 +6,6 @@ interface StatusProps {
     onChange: () => void;
 }
 
-/*
-    TODO: дубль
-*/
 const generateLives = (count: number) => {
     return new Array(count).fill(0).map((_, idx) => <HeartIcon key={idx} color="#f91515" />);
 };
@@ -17,9 +14,6 @@ export const Status = ({ onChange }: StatusProps) => {
     const { record } = useRegard();
     const { lives } = record;
 
-    /*
-     * Эта логика не должна здесь находиться
-     */
     useEffect(() => {
         if (lives <= 0) onChange();
     }, [lives, onChange]);

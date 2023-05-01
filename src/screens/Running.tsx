@@ -12,9 +12,6 @@ interface RunningProps {
     onStatusChange: () => void;
 }
 
-/*
-    TODO: переключатель добавить, чтобы можно было видеть только фон
-*/
 export const Running = ({ onStatusChange }: RunningProps) => {
     const ref = useRef<CatharsisImperativeHandleType>(null)
 

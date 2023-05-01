@@ -68,9 +68,6 @@ const resetRecord = ({ current, peak, lives }: Record) => {
     return record;
 };
 
-/*
-    TODO: перенести все ключи в одно место
-*/
 export const RegardProvider: FC = ({ children }) => {
     const [state, setState] = useLocalStorage<RegardState>('battery:storage', defaultState);
     const { regards, record } = state;

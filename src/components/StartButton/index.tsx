@@ -1,8 +1,5 @@
 import { FC } from 'react';
 
-/*
-    TODO: перенести все ключи в одно место
-*/
 const oldKeys = ['battery:regards', 'battery:achievement', 'battery:storage', 'battery:storage-update'];
 
 /*
